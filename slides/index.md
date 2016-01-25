@@ -12,65 +12,190 @@
 ' these are speaker notes
 
 ***
-![scary werewolf from Harem Malik https://www.flickr.com/photos/137107560@N03/22375062741/in/photolist-A6d3BP-8VsVso-7ahoM6-4Gqr6t-4a1jzf-7s9tAd-9t2gsx-4NmnHz-8QYNy1-CM5TG-7tHkMS-rDGfA-5MnkF7-3XrpSc-4jr82T-xuijb-aACQbH-9C55VB-ALum1-6KXFjL-5ocfaK-jsg9cp-jTmVQ-4L2xfn-8VpScR-sKeSy-ruKPT-ruKw9-kbbq1s-4SGiq7-4SC4fK-aMeLmK-aMemBc-aMdX8P-aMdUqt-aMdSkV-aMdMNg-aMdKhp-aMdHaX-aMdEcn-8T7PJ7-3Xd2HX-3Xhdpw-3XgUvj-3XcxAD-3XctAa-HqmWX-5ibkdS-9RLMaM-koaCxR](images/22375062741_f872b6a50a_z.jpg)
+
+### Influence
++ System/360
++ OS/360
+
+' By all accounts successful 
+' Transformative to the mainframe market
+' announced in '64
+
+---
+
+### S360 Features
++ 8-bit Byte
++ Byte Addressable Memory
++ 32-Bit Words
++ 9 track tape
+
+' dominated offline backup for 30 years.
+
+---
+
+### Problems
+- TSS/360 Never Released
+- OS/360 Year Late, Way Over Budget
+- Multiple OSs on Multiple Machines
+- Personnel Loss from Fatigue
+
+' Time Sharing System
+' Lots of problems, crazy schedule huge staff as competative attack on Multics
+
+---
+#### Software Crisis
+> How does a project get to be a year late?... One day at a time. - Mythical Man Month [p153]
+
+' By 1960 USAF was spending more on software than hardware.
+
+---
+> The time has arrived to switch from home-made software to manufactured software, from tinkering to engineering - twelve year after a similar transition has taken place in the computer hardware field ... it is hight time to take this step. The use of computer has reached the stage that software production ... has become a bottleneck for further expansion - Bauer @ 1968 Software Engineering Conference
+
+' S/360 by 1970 became wildly successfull
+
+*** 
+### So what is this paper?
+
+' this is a reflection on S/360 after 20 years - not discussed 
+' MMM was a 10y recap.
+' Write about process expressing our intuitions about how humans behave in systems 
 
 ***
+### Mythical Man Month
+- Document for Others
+- External Interfaces before Internal Implementations.
+- Adding labour to a late project only makes the project later.
+- Programming requires communication.
+ 
+---
+ 
+> Men and months are interchangeable commodities only when a task can be partitioned among many workers with no communication between them. 
 
-[comment]: # (maybe include furry image here)
+---
+
+> Since software construction in inherently a systems effort - an exercise in complex interrelationships - communication effort is great, and it quickly dominates the decrease in individual task time brought about by partitioning. Adding more men then lengthens, not shortens, the schedule. 
+
+' this is systemic disease within IBM
+' Document for others not
+
+---
+Programming **Requires** Communication
+
+> There are only two problems in software and it's communication.
+
+' problem is brooks got it wrong
+' Paths escalate logarithmically communication doesn't have to
+' writers rooms
 
 ***
-### And So it begins ...
+### Order of What?
 > There is no single development, in either technology or management technique, which by itself promises even one order-of-magnitude improvement withing a decade in productivity, in reliability, in simplicity.
 
-' how could this start so wrong?
-' do these words mean anything to you?
-
----
-![previous slide as motivational quote made at https://quozio.com/](images/There-is-no-single.1.jpg)
-
----
-![previous slide as motivational quote made at https://quozio.com/](images/There-is-no-single.2.jpg)
-
-' nope still meanignless
-
+' what exactly is Brooks measuring here?
+' talking specifically about the software process.
+' Alluded to MMM & Software Crisis
 
 ***
-#### The Software Management Process
+#### Software Process Management
 
 - **Productivity**
 - **Reliability** 
 - **Simplicity**
 
+---
+#### The software task
++ Buy don't Build
++ Incremental & Iterative Development
++ Prototype, Prototype, Prototype
++ Identify & Devlop Great Designers 
+
+' Might be OSS
+
+---
+### You think it started with a manifesto?
+>  "We were doing incremental development as early as 1957, in Los Angeles, under the direction of Bernie Dimsdale [at IBM's ServiceBureau Corporation]." - Larman
+
+--- 
+> "If the waterfall model risks not building the right product, then agile risks not building the product right. I’m very fond of Erlang creator Mike Williams point: “If you don’t make experiments before starting a project, then your whole project will be an experiment”. My hunch is what a lot of Agile process misses is that you need to experiment before you build." - Jesper Louis Andersen
+
+---
+### Designer
++ Identification 
++ Career Development & Metorship
++ Interactions
+
+' Realy about retention 
+
 ***
+#### Essecntial vs Accedential Complexity  
 
-- Buy don't Build (buy might be OSS)
-- Prototype
-- Iterative Development
-- Employee Retention
+' problem was this was from an OS/Tooling perspective.
 
-***
+--- 
+#### Why do we need a "silver bullet"?
++ Software Crisis
++ Coupled to Hardware due to limited abstractions
 
+' reference back to SE crisis
+' limited abstractions coupled us tightly to hardware 
+' see gains in h/w want them for software
+' keen to tie software to manufacturing - cloud 
+' creative process managed as such
+
+---
+#### I "liked" this paper, but ... 
+
+' fed ego
+' looked to the commoditization of hardware for comparison
+' even hardware no single activity 
+' placated by stuff that makes us feel good
+' want software to be hard
+
+
+
+
+
+---
 #### Price to Performance gains 
++ Commoditize Software engineering 
++ Cost Cutting 
++ Software Engineering Crisis 
 
-***
-
-Essecnce & Accedents 
 
 ***
 
 What's Really Hard?
 
-- Specification
+- Specification & Estimation 
 - Design
 - Testing
 
-' this is of the conceptual not the artifacts
+' software is the servant of many domains.
+' testing is of the conceptual not the artifacts
 
 ---
+
+
+***
+### Designers 
+> "Simplicity and elegance are unpopular because they require hard work and discipline to achieve and education to be appreciated" - Dijkstra
+
+***
+### What Did Brooks Get Wrong?
++ Speech Recognition & Image Recognition 
++ Manufacturing Retro-Fitting Not Hard - Design for it.
+
+' Speech & Image not for programming domain
+
+***
+### What Did Brooks Miss?
++ We've No Context
++ OS/Tools vs. Product/Contracting
++ Achieving for ourselves vs. target domain
+
+' 2 tings at play
+' ability to achieve in problem domain and in programming domain
+
+--- 
+### People Are People
  
-### Sub Slide
-
----
-
-### Sub Slide
-

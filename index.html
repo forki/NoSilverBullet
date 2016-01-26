@@ -85,14 +85,16 @@ dominated offline backup for 30 years.<br/>
 <section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
 <h3>Problems</h3>
 <ul>
+<li>Multiple OS across Multiple Machines</li>
 <li>TSS/360 Never Released</li>
-<li>OS/360 Year Late, Way Over Budget</li>
-<li>Multiple OSs on Multiple Machines</li>
+<li>OS/360 Year Late</li>
+<li>Significantly Over Budget</li>
+<li>Heavy Resource Consumer</li>
 <li>Personnel Loss from Fatigue</li>
 </ul>
 <aside class="notes">
 Time Sharing System<br/>
-Lots of problems, crazy schedule huge staff as competative attack on Multics<br/>
+Lots of problems, crazy schedule huge staff as competitive attack on Multics<br/>
 </aside>
 </section>
 <section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
@@ -106,32 +108,34 @@ By 1960 USAF was spending more on software than hardware.<br/>
 </section>
 <section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
 <blockquote>
-<p>The time has arrived to switch from home-made software to manufactured software, from tinkering to engineering - twelve year after a similar transition has taken place in the computer hardware field ... it is hight time to take this step. The use of computer has reached the stage that software production ... has become a bottleneck for further expansion - Bauer @ 1968 Software Engineering Conference</p>
+<p>"The time has arrived to switch from home-made software to manufactured software, from tinkering to engineering - twelve year after a similar transition has taken place in the computer hardware field ... it is high time to take this step. The use of computer has reached the stage that software production ... has become a bottleneck for further expansion" - Bauer @ 1968 Software Engineering Conference</p>
 </blockquote>
 <aside class="notes">
-S/360 by 1970 became wildly successfull<br/>
+S/360 by 1970 became wildly successful<br/>
 </aside>
 </section>
 </section>
 <section >
 <h3>So what is this paper?</h3>
 <aside class="notes">
-this is a reflection on S/360 after 20 years - not discussed <br/>
-MMM was a 10y recap.<br/>
 Write about process expressing our intuitions about how humans behave in systems <br/>
+this is a reflection on S/360 after 20 years - not discussed <br/>
+MMM was a 10 year recap.<br/>
 </aside>
 </section>
 <section >
 <section >
 <h3>Mythical Man Month</h3>
 <ul>
-<li>Document for Others</li>
-<li>External Interfaces before Internal Implementations.</li>
-<li>Adding labour to a late project only makes the project later.</li>
+<li>External interfaces before internal implementations.</li>
+<li>Great Designers Design Great Things.</li>
+<li>Good management leads to good implementations.</li>
+<li>Adding labor to a late project only makes the project later.</li>
 <li>Programming requires communication.</li>
 </ul>
-</section>
-<section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
+<aside class="notes">
+Dr. Cliff Snotes <br/>
+<h2></aside></h2>
 <blockquote>
 <p>Men and months are interchangeable commodities only when a task can be partitioned among many workers with no communication between them.</p>
 </blockquote>
@@ -158,15 +162,23 @@ writers rooms<br/>
 </section>
 </section>
 <section >
+<section >
 <h3>Order of What?</h3>
 <blockquote>
-<p>There is no single development, in either technology or management technique, which by itself promises even one order-of-magnitude improvement withing a decade in productivity, in reliability, in simplicity.</p>
+<p>There is no single development, in either technology or management technique, which by itself promises even one order-of-magnitude improvement within a decade in productivity, in reliability, in simplicity.</p>
 </blockquote>
 <aside class="notes">
 what exactly is Brooks measuring here?<br/>
 talking specifically about the software process.<br/>
 Alluded to MMM & Software Crisis<br/>
 </aside>
+</section>
+<section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
+<h3>The Roots?</h3>
+<blockquote>
+<p>"You cannot expect society to accept this, and therefore we must learn to program an order of magnitude more effectively." - Dijkstra</p>
+</blockquote>
+</section>
 </section>
 <section >
 <section >
@@ -183,7 +195,7 @@ Alluded to MMM & Software Crisis<br/>
 <li>Buy don't Build</li>
 <li>Incremental &amp; Iterative Development</li>
 <li>Prototype, Prototype, Prototype</li>
-<li>Identify &amp; Devlop Great Designers</li>
+<li>Identify &amp; Develop Great Designers</li>
 </ul>
 <aside class="notes">
 Might be OSS<br/>
@@ -201,20 +213,52 @@ Might be OSS<br/>
 </blockquote>
 </section>
 <section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
+<h3>Requirements &amp; the Prototype</h3>
+<ul>
+<li>Clear argument for prototyping</li>
+<li>Evolution of MMM's Second System Argument</li>
+<li>Sets up case for (a)gile</li>
+</ul>
+<aside class="notes">
+complexity really comes from poor assesment of problem domain - DDD<br/>
+weird argument about building vs writing programs<br/>
+</aside>
+</section>
+<section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
+<h3>Write Software, Build Systems</h3>
+<br />
+Brooks proposes:
++ Top Down Design
++ Fill in the blank (rewarding)
+<aside class="notes">
+lisp and functional support bottom up & top down<br/>
+</aside>
+</section>
+<section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
 <h3>Designer</h3>
 <ul>
 <li>Identification</li>
-<li>Career Development &amp; Metorship</li>
+<li>Career Development &amp; Mentorship</li>
 <li>Interactions</li>
 </ul>
 <aside class="notes">
-Realy about retention <br/>
+Really about retention <br/>
 </aside>
 </section>
+<section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
+<blockquote>
+<p>"Simplicity and elegance are unpopular because they require hard work and discipline to achieve and education to be appreciated" - Dijkstra</p>
+</blockquote>
+</section>
+<section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
+<blockquote>
+<p>"The one opinion was that a really competent programmer should be puzzle-minded and very fond of clever tricks; the other opinion was that programming was nothing more than optimizing the efficiency of the computational process, in one direction or the other." - Dijkstra</p>
+</blockquote>
+</section>
 </section>
 <section >
 <section >
-<h4>Essecntial vs Accedential Complexity</h4>
+<h4>Essential vs Accidental Complexity</h4>
 <aside class="notes">
 problem was this was from an OS/Tooling perspective.<br/>
 </aside>
@@ -243,13 +287,37 @@ placated by stuff that makes us feel good<br/>
 want software to be hard<br/>
 </aside>
 </section>
+</section>
+<section >
+<section >
+<h3>On the Visualized</h3>
+<ul>
+<li>UML</li>
+<li>Domain Driven Design</li>
+<li>
+Functional Programming
+<ul>
+<li>Domain &amp; Range</li>
+<li>Map X =&gt; Y</li>
+<li>Filter X where Y</li>
+<li>Reduce  X,Y =&gt; Z</li>
+</ul>
+</li>
+</ul>
+<aside class="notes">
+brooks speaks about what cannot be visualized<br/>
+</aside>
+</section>
 <section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
 <h4>Price to Performance gains</h4>
 <ul>
-<li>Commoditize Software engineering</li>
+<li>Commoditized Software engineering</li>
 <li>Cost Cutting</li>
 <li>Software Engineering Crisis</li>
 </ul>
+<blockquote>
+<p>"There seem to be three major conditions that must be fulfilled. The world at large must recognize the need for the change; secondly the economic need for it must be sufficiently strong; and, thirdly, the change must be technically feasible." - Dijkstra</p>
+</blockquote>
 </section>
 </section>
 <section >
@@ -269,12 +337,6 @@ testing is of the conceptual not the artifacts<br/>
 </section>
 </section>
 <section >
-<h3>Designers</h3>
-<blockquote>
-<p>"Simplicity and elegance are unpopular because they require hard work and discipline to achieve and education to be appreciated" - Dijkstra</p>
-</blockquote>
-</section>
-<section >
 <h3>What Did Brooks Get Wrong?</h3>
 <ul>
 <li>Speech Recognition &amp; Image Recognition</li>
@@ -284,7 +346,6 @@ testing is of the conceptual not the artifacts<br/>
 Speech & Image not for programming domain<br/>
 </aside>
 </section>
-<section >
 <section >
 <h3>What Did Brooks Miss?</h3>
 <ul>
@@ -296,10 +357,6 @@ Speech & Image not for programming domain<br/>
 2 tings at play<br/>
 ability to achieve in problem domain and in programming domain<br/>
 </aside>
-</section>
-<section author="Bill Berry" description="A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper" theme="night" title="No Silver Bullet" transition="default">
-<h3>People Are People</h3>
-</section>
 </section>
 
 

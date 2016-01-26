@@ -34,13 +34,15 @@
 ---
 
 ### Problems
+- Multiple OS across Multiple Machines
 - TSS/360 Never Released
-- OS/360 Year Late, Way Over Budget
-- Multiple OSs on Multiple Machines
+- OS/360 Year Late 
+- Significantly Over Budget
+- Heavy Resource Consumer  
 - Personnel Loss from Fatigue
 
 ' Time Sharing System
-' Lots of problems, crazy schedule huge staff as competative attack on Multics
+' Lots of problems, crazy schedule huge staff as competitive attack on Multics
 
 ---
 #### Software Crisis
@@ -49,24 +51,27 @@
 ' By 1960 USAF was spending more on software than hardware.
 
 ---
-> The time has arrived to switch from home-made software to manufactured software, from tinkering to engineering - twelve year after a similar transition has taken place in the computer hardware field ... it is hight time to take this step. The use of computer has reached the stage that software production ... has become a bottleneck for further expansion - Bauer @ 1968 Software Engineering Conference
+> "The time has arrived to switch from home-made software to manufactured software, from tinkering to engineering - twelve year after a similar transition has taken place in the computer hardware field ... it is high time to take this step. The use of computer has reached the stage that software production ... has become a bottleneck for further expansion" - Bauer @ 1968 Software Engineering Conference
 
-' S/360 by 1970 became wildly successfull
+' S/360 by 1970 became wildly successful
 
 *** 
 ### So what is this paper?
 
-' this is a reflection on S/360 after 20 years - not discussed 
-' MMM was a 10y recap.
 ' Write about process expressing our intuitions about how humans behave in systems 
+' this is a reflection on S/360 after 20 years - not discussed 
+' MMM was a 10 year recap.
+
 
 ***
 ### Mythical Man Month
-- Document for Others
-- External Interfaces before Internal Implementations.
-- Adding labour to a late project only makes the project later.
+- External interfaces before internal implementations.
+- Great Designers Design Great Things.
+- Good management leads to good implementations.
+- Adding labor to a late project only makes the project later.
 - Programming requires communication.
  
+' Dr. Cliff Snotes 
 ---
  
 > Men and months are interchangeable commodities only when a task can be partitioned among many workers with no communication between them. 
@@ -89,11 +94,15 @@ Programming **Requires** Communication
 
 ***
 ### Order of What?
-> There is no single development, in either technology or management technique, which by itself promises even one order-of-magnitude improvement withing a decade in productivity, in reliability, in simplicity.
+> There is no single development, in either technology or management technique, which by itself promises even one order-of-magnitude improvement within a decade in productivity, in reliability, in simplicity.
 
 ' what exactly is Brooks measuring here?
 ' talking specifically about the software process.
 ' Alluded to MMM & Software Crisis
+
+---
+### The Roots?
+>"You cannot expect society to accept this, and therefore we must learn to program an order of magnitude more effectively." - Dijkstra
 
 ***
 #### Software Process Management
@@ -107,7 +116,7 @@ Programming **Requires** Communication
 + Buy don't Build
 + Incremental & Iterative Development
 + Prototype, Prototype, Prototype
-+ Identify & Devlop Great Designers 
++ Identify & Develop Great Designers 
 
 ' Might be OSS
 
@@ -119,15 +128,40 @@ Programming **Requires** Communication
 > "If the waterfall model risks not building the right product, then agile risks not building the product right. I’m very fond of Erlang creator Mike Williams point: “If you don’t make experiments before starting a project, then your whole project will be an experiment”. My hunch is what a lot of Agile process misses is that you need to experiment before you build." - Jesper Louis Andersen
 
 ---
+### Requirements & the Prototype
++ Clear argument for prototyping 
++ Evolution of MMM's Second System Argument
++ Sets up case for (a)gile
+
+' complexity really comes from poor assesment of problem domain - DDD
+' weird argument about building vs writing programs
+
+---
+### Write Software, Build Systems 
+<br />
+Brooks proposes:
++ Top Down Design
++ Fill in the blank (rewarding)
+
+' lisp and functional support bottom up & top down
+
+
+---
 ### Designer
 + Identification 
-+ Career Development & Metorship
++ Career Development & Mentorship
 + Interactions
 
-' Realy about retention 
+' Really about retention 
+
+---
+> "Simplicity and elegance are unpopular because they require hard work and discipline to achieve and education to be appreciated" - Dijkstra
+
+---
+> "The one opinion was that a really competent programmer should be puzzle-minded and very fond of clever tricks; the other opinion was that programming was nothing more than optimizing the efficiency of the computational process, in one direction or the other." - Dijkstra
 
 ***
-#### Essecntial vs Accedential Complexity  
+#### Essential vs Accidental Complexity  
 
 ' problem was this was from an OS/Tooling perspective.
 
@@ -151,16 +185,25 @@ Programming **Requires** Communication
 ' placated by stuff that makes us feel good
 ' want software to be hard
 
+***
+### On the Visualized
++ UML
++ Domain Driven Design
++ Functional Programming 
+    + Domain & Range
+    + Map X => Y 
+    + Filter X where Y
+    + Reduce  X,Y => Z 
 
-
-
+' brooks speaks about what cannot be visualized
 
 ---
 #### Price to Performance gains 
-+ Commoditize Software engineering 
++ Commoditized Software engineering 
 + Cost Cutting 
 + Software Engineering Crisis 
 
+>"There seem to be three major conditions that must be fulfilled. The world at large must recognize the need for the change; secondly the economic need for it must be sufficiently strong; and, thirdly, the change must be technically feasible." - Dijkstra
 
 ***
 
@@ -177,8 +220,7 @@ What's Really Hard?
 
 
 ***
-### Designers 
-> "Simplicity and elegance are unpopular because they require hard work and discipline to achieve and education to be appreciated" - Dijkstra
+
 
 ***
 ### What Did Brooks Get Wrong?
@@ -196,6 +238,4 @@ What's Really Hard?
 ' 2 tings at play
 ' ability to achieve in problem domain and in programming domain
 
---- 
-### People Are People
- 
+

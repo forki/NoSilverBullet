@@ -1,7 +1,7 @@
 - title : No Silver Bullet
 - description : A 'Papers We Love' talk on Fred Brooks' 'No Silver Bullet' paper
 - author : Bill Berry
-- theme : night
+- theme : moon
 - transition : default
 
 ***
@@ -11,8 +11,16 @@
 #####(1985)
 ' these are speaker notes
 
-***
+---
+#### I "liked" this paper, but ... 
 
+' fed ego
+' looked to the commoditization of hardware for comparison
+' even hardware no single activity 
+' placated by stuff that makes us feel good
+' want software to be hard
+
+***
 ### Influence
 + System/360
 + OS/360
@@ -22,7 +30,6 @@
 ' announced in '64
 
 ---
-
 ### S360 Features
 + 8-bit Byte
 + Byte Addressable Memory
@@ -32,7 +39,6 @@
 ' dominated offline backup for 30 years.
 
 ---
-
 ### Problems
 - Multiple OS across Multiple Machines
 - TSS/360 Never Released
@@ -43,6 +49,7 @@
 
 ' Time Sharing System
 ' Lots of problems, crazy schedule huge staff as competitive attack on Multics
+' not a snow-flake, lots of failed systems 
 
 ---
 #### Software Crisis
@@ -72,12 +79,11 @@
 - Programming requires communication.
  
 ' Dr. Cliff Snotes 
+
 ---
- 
 > Men and months are interchangeable commodities only when a task can be partitioned among many workers with no communication between them. 
 
 ---
-
 > Since software construction in inherently a systems effort - an exercise in complex interrelationships - communication effort is great, and it quickly dominates the decrease in individual task time brought about by partitioning. Adding more men then lengthens, not shortens, the schedule. 
 
 ' this is systemic disease within IBM
@@ -105,13 +111,105 @@ Programming **Requires** Communication
 >"You cannot expect society to accept this, and therefore we must learn to program an order of magnitude more effectively." - Dijkstra
 
 ***
-#### Software Process Management
+#### Improve ALL THE THINGS!
 
 - **Productivity**
 - **Reliability** 
 - **Simplicity**
 
+' to get 10x improvement 90% need to be accidents 
+' tools reduce accidents to 0
+' brooks things the former is false latter impossible
+
 ---
+#### Essential vs Accidental Complexity  
+
++ Essential - complexity arising because of the nature of software
++ Accidental - complexity arising from production of software
+
+Brooks suggests that most techniques attack the accidents of software engineering.
+
+' Building abstract data structures vs language representations
+' this is to say there exists a pure model 
+' problem was this was from an OS/Tooling perspective.
+
+***
+### Essential Difficulties
++ Complexity 
++ Conformity 
++ Changeability 
++ Invisibility 
+
+---
+### Complexity
++ Software is complex for its size
++ Lots of state
++ Essential Complexity increases non-linearly w/size 
++ Complexity is intrinsic in many domains 
+
+' what size?
+' Linux has little problem communicating, poor organization design
+' hand-waving 
+' intrinsic complexity due to lack of abstractions
+
+--- 
+### Complexity creates:
++ Communication problems (MMM)
++ Flaws, overruns, delays
++ Lots of possible states 
++ Lack of extensibility 
++ Unrecognized state leads to security flaws
++ Steep learning curves put pressure on labor turn-over
+
+' Functional Programming
+' why is labor turn-over bad? needs to be strategic  
+
+---
+### Conformity
++ Humans design poor interfaces, therefore complexity 
++ Software must conform: 
+    + because it's the newest tech
+    + because it's the most conformable
+
+' this is a value argument 
+
+---
+### Changeability 
++ Software constantly subject to pressures for change
++ Argues manufactured products rarely change after manufacture
++ Software is 'thought stuff', infinitely malleable 
++ Designed for Hardware which it outlives
+
+We change software due to edge cases or success drives further innovation
+
+' Not a requirement not implicit 
+' cloud abstractions 
+
+---
+### Invisibility 
++ UML
++ Domain Driven Design
++ Functional Programming 
+    + Domain & Range
+    + Map X => Y 
+    + Filter X where Y
+    + Reduce  X,Y => Z 
++ MIT's Scratch, Labview, etc.
+
+' brooks speaks about what cannot be visualized
+' geometric visualizations, software not in embedded space
+
+---
+### Invisibility cont.
++ Software diagrams (complex systems) are several directed graphs, super-imposed
++ Graphs Represent
+    + Flow Control
+    + Patterns of Dependency
+    + Time Sequence 
+    + Name-Space Relationships  
+
+
+*** 
 #### The software task
 + Buy don't Build
 + Incremental & Iterative Development
@@ -133,11 +231,11 @@ Programming **Requires** Communication
 + Evolution of MMM's Second System Argument
 + Sets up case for (a)gile
 
-' complexity really comes from poor assesment of problem domain - DDD
+' complexity really comes from poor assesmsent of problem domain - DDD
 ' weird argument about building vs writing programs
 
 ---
-### Write Software, Build Systems 
+### Write Software, Grow Systems 
 <br />
 Brooks proposes:
 + Top Down Design
@@ -161,11 +259,6 @@ Brooks proposes:
 > "The one opinion was that a really competent programmer should be puzzle-minded and very fond of clever tricks; the other opinion was that programming was nothing more than optimizing the efficiency of the computational process, in one direction or the other." - Dijkstra
 
 ***
-#### Essential vs Accidental Complexity  
-
-' problem was this was from an OS/Tooling perspective.
-
---- 
 #### Why do we need a "silver bullet"?
 + Software Crisis
 + Coupled to Hardware due to limited abstractions
@@ -177,33 +270,19 @@ Brooks proposes:
 ' creative process managed as such
 
 ---
-#### I "liked" this paper, but ... 
-
-' fed ego
-' looked to the commoditization of hardware for comparison
-' even hardware no single activity 
-' placated by stuff that makes us feel good
-' want software to be hard
-
-***
-### On the Visualized
-+ UML
-+ Domain Driven Design
-+ Functional Programming 
-    + Domain & Range
-    + Map X => Y 
-    + Filter X where Y
-    + Reduce  X,Y => Z 
-
-' brooks speaks about what cannot be visualized
-
----
 #### Price to Performance gains 
 + Commoditized Software engineering 
 + Cost Cutting 
 + Software Engineering Crisis 
 
 >"There seem to be three major conditions that must be fulfilled. The world at large must recognize the need for the change; secondly the economic need for it must be sufficiently strong; and, thirdly, the change must be technically feasible." - Dijkstra
+
+
+
+
+
+
+
 
 ***
 
@@ -238,4 +317,7 @@ What's Really Hard?
 ' 2 tings at play
 ' ability to achieve in problem domain and in programming domain
 
-
+***
+### Things To Think On
++ Why do we impose scientific reasoning/rigor on the systems crafted by humans, but not the system of humans that crafted them?
++ Should we ever write formal process papers that neglect to mention context?

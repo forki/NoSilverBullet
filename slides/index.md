@@ -84,7 +84,7 @@
 > Men and months are interchangeable commodities only when a task can be partitioned among many workers with no communication between them. 
 
 ---
-> Since software construction in inherently a systems effort - an exercise in complex interrelationships - communication effort is great, and it quickly dominates the decrease in individual task time brought about by partitioning. Adding more men then lengthens, not shortens, the schedule. 
+> Since software construction is inherently a systems effort - an exercise in complex interrelationships - communication effort is great, and it quickly dominates the decrease in individual task time brought about by partitioning. Adding more men then lengthens, not shortens, the schedule. 
 
 ' this is systemic disease within IBM
 ' Document for others not
@@ -108,7 +108,7 @@ Programming **Requires** Communication
 
 ---
 ### The Roots?
->"You cannot expect society to accept this, and therefore we must learn to program an order of magnitude more effectively." - Dijkstra
+>" If software development were to continue to be the same clumsy and expensive process as it is now, things would get completely out of balance. You cannot expect society to accept this, and therefore we must learn to program an order of magnitude more effectively. To put it in another way: as long as machines were the largest item on the budget, the programming profession could get away with its clumsy techniques, but that umbrella will fold rapidly." - Dijkstra
 
 ***
 #### Improve ALL THE THINGS!
@@ -184,6 +184,7 @@ We change software due to edge cases or success drives further innovation
 
 ' Not a requirement not implicit 
 ' cloud abstractions 
+' Manufacturing Retro-Fitting Not Hard - Design for it.
 
 ---
 ### Invisibility 
@@ -219,7 +220,7 @@ We change software due to edge cases or success drives further innovation
 ' Might be OSS
 
 ---
-### You think it started with a manifesto?
+### Agile, you'd think it started with a manifesto?
 >  "We were doing incremental development as early as 1957, in Los Angeles, under the direction of Bernie Dimsdale [at IBM's ServiceBureau Corporation]." - Larman
 
 --- 
@@ -242,7 +243,6 @@ Brooks proposes:
 + Fill in the blank (rewarding)
 
 ' lisp and functional support bottom up & top down
-
 
 ---
 ### Designer
@@ -277,16 +277,10 @@ Brooks proposes:
 
 >"There seem to be three major conditions that must be fulfilled. The world at large must recognize the need for the change; secondly the economic need for it must be sufficiently strong; and, thirdly, the change must be technically feasible." - Dijkstra
 
-
-
-
-
-
-
+' about value
 
 ***
-
-What's Really Hard?
+### What's Really Hard?
 
 - Specification & Estimation 
 - Design
@@ -295,29 +289,30 @@ What's Really Hard?
 ' software is the servant of many domains.
 ' testing is of the conceptual not the artifacts
 
----
-
-
-***
-
-
-***
-### What Did Brooks Get Wrong?
-+ Speech Recognition & Image Recognition 
-+ Manufacturing Retro-Fitting Not Hard - Design for it.
-
-' Speech & Image not for programming domain
-
 ***
 ### What Did Brooks Miss?
 + We've No Context
 + OS/Tools vs. Product/Contracting
 + Achieving for ourselves vs. target domain
 
-' 2 tings at play
+' 2 things at play
 ' ability to achieve in problem domain and in programming domain
+' Speech & Image recognition not for software - target domain solutions
 
 ***
 ### Things To Think On
 + Why do we impose scientific reasoning/rigor on the systems crafted by humans, but not the system of humans that crafted them?
 + Should we ever write formal process papers that neglect to mention context?
+
+***
+### Links & Research
++ Dijkstra's Turing Award Speech:   https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html
++ Jesper Anderson Interview: https://medium.com/this-is-not-a-monad-tutorial/interview-with-jesper-louis-andersen-about-erlang-haskell-ocaml-go-idris-the-jvm-software-and-b0de06440fbd#.px7z1n77k
++ Kenneth Anderson Talk on NSB: https://www.cs.colorado.edu/~kena/classes/5828/s09/lectures/02-nosilverbullet.pdf
++ Amazon 2 Pizza Teams: http://blog.idonethis.com/two-pizza-team/
+
+---
+### Links & Research cont.
++ Michael Feathers - Scaling Agile: http://michaelfeathers.silvrback.com/the-myth-of-scaling 
++ Alan Cooper Edge Calculus: https://medium.com/@MrAlanCooper/the-edges-6e680bd987b7#.kgonwprky
++ Joe Duffy - Line between Engineering 7 Research: http://joeduffyblog.com/2013/07/13/blurring-the-line-between-research-and-engineering/

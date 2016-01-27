@@ -15,6 +15,7 @@
 #### I "liked" this paper, but ... 
 
 ' fed ego
+' want software to be hard
 ' looked to the commoditization of hardware for comparison
 ' even hardware no single activity 
 ' placated by stuff that makes us feel good
@@ -237,15 +238,13 @@ We change software due to edge cases or success drives further innovation
 
 ---
 ### Write Software, Grow Systems 
-<br />
-Brooks proposes:
-+ Top Down Design
-+ Fill in the blank (rewarding)
+Brooks proposes top down, fill in the blank design 
+~rewarding~
 
 ' lisp and functional support bottom up & top down
 
 ---
-### Designer
+### The Great Designer
 + Identification 
 + Career Development & Mentorship
 + Interactions
@@ -291,6 +290,7 @@ Brooks proposes:
 
 ***
 ### What Did Brooks Miss?
+
 + We've No Context
 + OS/Tools vs. Product/Contracting
 + Achieving for ourselves vs. target domain
@@ -301,11 +301,13 @@ Brooks proposes:
 
 ***
 ### Things To Think On
+
 + Why do we impose scientific reasoning/rigor on the systems crafted by humans, but not the system of humans that crafted them?
 + Should we ever write formal process papers that neglect to mention context?
 
 ***
 ### Links & Research
+
 + Dijkstra's Turing Award Speech:   https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html
 + Jesper Anderson Interview: https://medium.com/this-is-not-a-monad-tutorial/interview-with-jesper-louis-andersen-about-erlang-haskell-ocaml-go-idris-the-jvm-software-and-b0de06440fbd#.px7z1n77k
 + Kenneth Anderson Talk on NSB: https://www.cs.colorado.edu/~kena/classes/5828/s09/lectures/02-nosilverbullet.pdf
@@ -313,6 +315,7 @@ Brooks proposes:
 
 ---
 ### Links & Research cont.
+
 + Michael Feathers - Scaling Agile: http://michaelfeathers.silvrback.com/the-myth-of-scaling 
 + Alan Cooper Edge Calculus: https://medium.com/@MrAlanCooper/the-edges-6e680bd987b7#.kgonwprky
 + Joe Duffy - Line between Engineering 7 Research: http://joeduffyblog.com/2013/07/13/blurring-the-line-between-research-and-engineering/
